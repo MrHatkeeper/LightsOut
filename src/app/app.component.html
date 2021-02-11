@@ -1,4 +1,8 @@
 <div>
+  <button (click)="generateGame()">Hra</button>
+  <button (click)="winGame()">Win Game</button>
+  <p>Clicks: {{clicks}}</p>
+  <p>BestScore {{topScore}}</p>
   <table class="checkboard">
     <tr *ngFor="let j of grid; let i = index">
       <td *ngFor="let k of grid[i]; let j = index">
